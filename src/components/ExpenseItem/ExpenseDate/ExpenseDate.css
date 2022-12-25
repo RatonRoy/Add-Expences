@@ -1,0 +1,19 @@
+.date-container{
+    padding: 0.3rem 0;
+    background-color: #2a9d8f;
+    min-width: 80px;
+    border-radius: 0.4rem;
+}
+.month, .day, .year{
+    color: white;
+    font-weight: 400;
+    
+}
+.day{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.month{
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}

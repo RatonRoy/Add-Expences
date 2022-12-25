@@ -1,0 +1,31 @@
+*, ::after, ::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background-color: white; */
+}
+
+/* ********* Global CSS ************** */
+body{
+  background-color: #cad2c5;
+}
+.section-center{
+  width: 80%;
+  margin: 1.5rem auto;
+}
+.section-title{
+  /* margin: 1rem 0; */
+  margin-bottom: 1.5rem;
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: 700; 
+  /* color: rgb(39, 7, 4); */
+  color: white;
+}
+
+/* ********* Global CSS End  ************** */
+
+.expense-wrap{
+  background-color: #576970;
+  padding: 1rem 2rem;
+}

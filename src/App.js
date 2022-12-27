@@ -1,5 +1,6 @@
 import './App.css';
 import ExpenseItem from './components/ExpenseItem/ExpenseItem';
+import NewExpense from './components/NewExpense/NewExpense';
 
 function App() {
   const expenses = [
@@ -30,6 +31,7 @@ function App() {
   ]
   return (
     <div className="app-container section-center">
+      <NewExpense/>
      <div className="expense-wrap">
       <h1 className='section-title'> Expense List </h1>
      {

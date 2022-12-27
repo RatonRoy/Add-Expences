@@ -1,0 +1,38 @@
+.form-wrap{
+
+}
+.title-amount-container, .date-button-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+.form-control{
+    width: 45%;
+}
+label{
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.input-field{
+    display: block;
+    padding: 0.4rem 1rem;
+    width: 80%;
+    /* margin: 0 auto; */
+    margin-top: 0.5rem;
+    border: none;
+}
+.btn-submit{
+    display: block;
+    background-color: #e76f51;
+    color: white;
+    /* width: 45%; */
+    /* text-align: start; */
+    padding: 0.5rem 0.8rem;
+    font-size: 1.1rem;
+    margin-top: 2rem;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+
+}

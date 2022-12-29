@@ -19,7 +19,19 @@ const ExpenseForm = () => {
 
     const sumbitChangeHandler = (event) => {
         event.preventDefault()
-        console.log(enteredTitle, enteredDate, enteredAmount);
+        // console.log(enteredTitle, enteredDate, enteredAmount);`
+
+        const expenses = {
+            title : enteredTitle, 
+            amount : enteredAmount, 
+            date : new Date(enteredDate), 
+        }
+
+        console.log(expenses);
+
+        SetEnteredTitle('');
+        SetEnteredAmount('');
+        SetEnteredDate('');
     }
 
     return (
@@ -32,6 +44,7 @@ const ExpenseForm = () => {
                     <label htmlFor="title"> Title </label>
                     <input type="text" name="title" className='input-field' 
                     onChange={titleChangeHandler}
+                    value = {enteredTitle}
                     />
                 </div>
                 {/* single input end  */}
@@ -40,6 +53,7 @@ const ExpenseForm = () => {
                     <label htmlFor="amount"> Amount </label>
                     <input type="number" name="amount" className='input-field' min= '5' 
                     onChange={amountChangeHandler}
+                    value = {enteredAmount}
                     />
                 </div>
                 {/* single input end  */}
@@ -51,6 +65,7 @@ const ExpenseForm = () => {
                     <label htmlFor="date"> Amount </label>
                     <input type="date" name="date" className='input-field' min= '2018-01-01' max = '2022-12-31' 
                     onChange={dateChangeHandler}
+                    value = {enteredDate}
                     />
                 </div>
                 {/* single input end  */}

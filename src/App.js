@@ -29,9 +29,16 @@ function App() {
       date : new Date(2022, 7, 15), 
     },
   ]
+
+  const addExpenseHandler = (addExpenseData) => {
+      const newExpenseData = {
+        ...addExpenseData, 
+      }
+      console.log(newExpenseData);
+  }
   return (
     <div className="app-container section-center">
-      <NewExpense/>
+      <NewExpense onAddExpenseData = {addExpenseHandler} />
      <div className="expense-wrap">
       <h1 className='section-title'> Expense List </h1>
      {
